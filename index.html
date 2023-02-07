@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,45 +9,49 @@
 
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
-<div class="wrap"></div>
-<input id="myinput" type="text" placeholder="Search..">
+    <div id="wrap" class="web-mount">
+        <section class="content">
+            <section class="brand">
+                <section class="header-section">
+                    <div class="header-wrap">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/full-logo.f9246fa0ca04c7cef80a5d0f5409f0be.png" alt="밀리의 서재 로고">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-nav">
+                            <span>메뉴 열기</span>
+                        </button>
+                        <div class="nav-box">
+                            <nav>
+                                <ul>
+                                    <li><a href="/h4/b2b">기업문의</a></li>
+                                    <li><a href="https://www.millie.town/">회사소개</a></li>
+                                    <li><a href="/v3/management">계정관리</a></li>
+                                </ul>
+                            </nav>
+                            <button class="brand-login">로그인</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="intro" class="intro-section animation">
+                    <div class="section-wrap">
+                        <div class="text-wrap">
+                            <h1>당신의 일상을 1밀리+ 독서와 무제한 친해지리</h1>
+                            <p class="millielibrary">밀리의 서재</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </div>
     <script>
-        $(function(){
-            $.ajax({
-                url:"./class_609.json",
-                dataType:"json",
-                success:function(data){
-                    if(data.length>0){
-                        var tb=$("<table/>");
-
-                        for(var i in data){
-                            var $id=data[i].id;
-                            var $name=data[i].name;
-                            var $gender=data[i].gender;
-                            var $team=data[i].team;
-
-                            var row=$("<tr/>").append(
-                                $("<td/>").text($id),
-                                $("<td/>").text($name),
-                                $("<td/>").text($gender),
-                                $("<td/>").text($team),
-                            );
-                            tb.append(row);
-                        }
-                        $(".wrap").append(tb);
-                    }
-                }
-            });
-        });
-
-        $("#myinput").on("keyup",function(){
-            var value=$(this).val();
-            $(".wrap tr").filter(function(){
-                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
-            });
-        });
+        
     </script>
 </body>
 </html>
