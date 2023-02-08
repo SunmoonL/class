@@ -18,3 +18,202 @@ a {
 #wrap {
   height: 100%;
 }
+
+@keyframes fadeIn {
+  0% {
+    transform: translate3d(0, 50%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.intro-section {
+  background: linear-gradient(#f8faff 67.5%, #f0f4ff 0);
+  padding: 64px 0 0;
+  height: 820px;
+}
+.intro-section .section-wrap {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url(/img/main-bg.png);
+  background-size: 765px;
+  background-repeat: no-repeat;
+  background-position: 96% 55%;
+  overflow: hidden;
+}
+.intro-section .section-wrap .text-wrap {
+  margin-top: 88px;
+  padding: 0 48px;
+}
+.intro-section .section-wrap .text-wrap h1 {
+  color: transparent;
+  text-indent: -9999px;
+  background: url(/img/slogan.png);
+  background-repeat: no-repeat;
+  height: 223px;
+  background-size: 346px;
+  animation: fadeIn 1.8s forwards;
+  opacity: 0;
+  margin: 0.67em 0;
+}
+.intro-section .section-wrap .text-wrap p {
+  margin-top: 310px;
+  color: transparent;
+  text-indent: -9999px;
+  background: url(/img/millielibrary.png);
+  background-size: 178px;
+  background-repeat: no-repeat;
+  height: 47px;
+  font-size: 22px;
+  line-height: 160%;
+  animation: fadeIn 1.2s 0.6s forwards;
+  opacity: 0;
+}
+
+@keyframes slideLeft {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -3000px;
+  }
+}
+@keyframes slideRight {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 3000px;
+  }
+}
+.manybook-section {
+  background-color: #fff;
+}
+.manybook-section .section-wrap {
+  padding: 80px 24px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.manybook-section .section-wrap .text-wrap {
+  margin-bottom: 60px;
+}
+.manybook-section .section-wrap .text-wrap h2 {
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin-bottom: 24px;
+  text-align: center;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+}
+.manybook-section .section-wrap .text-wrap p {
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: -0.6px;
+  color: #555;
+  text-align: center;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+}
+.manybook-section .section-wrap .bookslide-wrap {
+  margin-top: 80px;
+}
+.manybook-section .section-wrap .bookslide-wrap .slide {
+  width: 100%;
+  height: 500px;
+}
+.manybook-section .section-wrap .bookslide-wrap .slide01 {
+  margin: -180px 0 0;
+  background: url(/img/slide01.png) 0/3000px repeat-x;
+  animation: slideLeft 100s linear infinite;
+}
+.manybook-section .section-wrap .bookslide-wrap .slide02 {
+  margin: -292px 0;
+  background: url(/img/slide02.png) 0/3000px repeat-x;
+  animation: slideRight 100s linear infinite;
+}
+.manybook-section .section-wrap .bookslide-wrap .slide03 {
+  margin: -292px 0;
+  background: url(/img/slide03.png) 0/3000px repeat-x;
+  animation: slideLeft 100s linear infinite;
+}
+
+.audiodrama-section {
+  background-color: #f7f7f7;
+}
+.audiodrama-section .section-wrap {
+  padding: 80px 0 120px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.audiodrama-section .section-wrap .text-wrap {
+  margin-bottom: 60px;
+}
+.audiodrama-section .section-wrap .text-wrap h2 {
+  animation: fadeIn 2s forwards;
+  text-align: center;
+  opacity: 0;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin-bottom: 24px;
+}
+.audiodrama-section .section-wrap .text-wrap p {
+  animation: fadeIn 2s forwards;
+  text-align: center;
+  opacity: 0;
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: -0.6px;
+  color: #555;
+}
+.audiodrama-section .section-wrap .video-wrap {
+  max-width: 730px;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(5px 5px 50px rgba(0, 0, 0, 0.03)) drop-shadow(12px 12px 32px rgba(0, 0, 0, 0.1));
+  position: relative;
+}
+.audiodrama-section .section-wrap .video-wrap .video-poster {
+  position: relative;
+}
+.audiodrama-section .section-wrap .video-wrap .video-poster img {
+  max-width: 100%;
+  vertical-align: top;
+  border-style: none;
+  pointer-events: none;
+}
+.audiodrama-section .section-wrap .video-wrap .video-poster .iframe-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.audiodrama-section .section-wrap .video-wrap .video-poster .iframe-video .youtube-player {
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.video-poster:after {
+  content: "";
+  background: url(/img/play-btn.png);
+  background-size: 56px;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+}

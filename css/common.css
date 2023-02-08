@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   min-width: 320px;
   font-size: 14px;
@@ -81,42 +80,5 @@ body {
   color: #fff;
   text-align: center;
   overflow: visible;
-}
-
-.intro-section {
-  background: linear-gradient(#f8faff 67.5%, #f0f4ff 0);
-  padding: 64px 0 0;
-  height: 820px;
-}
-.intro-section .section-wrap {
-  position: relative;
-  display: block;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png);
-  background-size: 765px;
-  background-repeat: no-repeat;
-  background-position: 96% 55%;
-}
-.intro-section .section-wrap .text-wrap {
-  margin-top: 88px;
-  padding: 0 48px;
-}
-.intro-section .section-wrap .text-wrap h1 {
-  color: transparent;
-  text-indent: -9999px;
-  background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e7658eb4f468e43253b57f8466b5.png);
-  background-repeat: no-repeat;
-  height: 223px;
-  background-size: 346px;
-}
-.intro-section .section-wrap .text-wrap p {
-  margin-top: 310px;
-  color: transparent;
-  text-indent: -9999px;
-  background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/br…illielibrary.e908db2a7501cfb173f997fcc3314c2a.png);
-  background-size: 178px;
-  background-repeat: no-repeat;
-  height: 47px;
+  outline: 0;
 }

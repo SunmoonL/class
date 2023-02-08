@@ -1,12 +1,13 @@
 @charset"UTF-8";
 
-body{
+body {
     min-width: 320px;
     font-size: 14px;
     color: #242424;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
 }
+
 .header-section {
     position: fixed;
     width: 100%;
@@ -43,7 +44,8 @@ body{
                 }
             }
         }
-        .btn-nav{
+
+        .btn-nav {
             display: none;
             width: 32px;
             height: 32px;
@@ -57,14 +59,17 @@ body{
             font-size: 100%;
             line-height: 1.15;
         }
-        .nav-box{
+
+        .nav-box {
             display: flex;
             align-items: center;
-            ul{
+
+            ul {
                 display: flex;
                 justify-content: center;
                 margin-right: 24px;
-                a{
+
+                a {
                     padding: 20px 24px;
                     font-size: 16px;
                     color: #242424;
@@ -72,7 +77,8 @@ body{
                     background-color: transparent;
                 }
             }
-            .brand-login{
+
+            .brand-login {
                 cursor: pointer;
                 background: #333;
                 border-radius: 100px;
@@ -82,44 +88,7 @@ body{
                 color: #fff;
                 text-align: center;
                 overflow: visible;
-            }
-        }
-    }
-}
-
-.intro-section{
-    background: linear-gradient(#f8faff 67.5%, #f0f4ff 0);
-    padding: 64px 0 0;
-    height: 820px;
-    .section-wrap{
-        position: relative;
-        display: block;
-        height: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png);
-        background-size: 765px;
-        background-repeat: no-repeat;
-        background-position: 96% 55%;
-        .text-wrap{
-            margin-top: 88px;
-            padding: 0 48px;
-            h1{
-                color: transparent;
-                text-indent: -9999px;
-                background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e7658eb4f468e43253b57f8466b5.png);
-                background-repeat: no-repeat;
-                height: 223px;
-                background-size: 346px;
-            }
-            p{
-                margin-top: 310px;
-                color: transparent;
-                text-indent: -9999px;
-                background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/br…illielibrary.e908db2a7501cfb173f997fcc3314c2a.png);
-                background-size: 178px;
-                background-repeat: no-repeat;
-                height: 47px;
+                outline: 0;
             }
         }
     }
