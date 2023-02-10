@@ -30,7 +30,7 @@
         height: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        background: url(/img/main-bg.png);
+        background: url(../img/main-bg.png);
         background-size: 765px;
         background-repeat: no-repeat;
         background-position: 96% 55%;
@@ -43,7 +43,7 @@
             h1 {
                 color: transparent;
                 text-indent: -9999px;
-                background: url(/img/slogan.png);
+                background: url(../img/slogan.png);
                 background-repeat: no-repeat;
                 height: 223px;
                 background-size: 346px;
@@ -56,7 +56,7 @@
                 margin-top: 310px;
                 color: transparent;
                 text-indent: -9999px;
-                background: url(/img/millielibrary.png);
+                background: url(../img/millielibrary.png);
                 background-size: 178px;
                 background-repeat: no-repeat;
                 height: 47px;
@@ -132,19 +132,19 @@
 
             .slide01 {
                 margin: -180px 0 0;
-                background: url(/img/slide01.png) 0/ 3000px repeat-x;
+                background: url(../img/slide01.png) 0/ 3000px repeat-x;
                 animation: slideLeft 100s linear infinite;
             }
 
             .slide02 {
                 margin: -292px 0;
-                background: url(/img/slide02.png) 0/ 3000px repeat-x;
+                background: url(../img/slide02.png) 0/ 3000px repeat-x;
                 animation: slideRight 100s linear infinite;
             }
 
             .slide03 {
                 margin: -292px 0;
-                background: url(/img/slide03.png) 0/ 3000px repeat-x;
+                background: url(../img/slide03.png) 0/ 3000px repeat-x;
                 animation: slideLeft 100s linear infinite;
             }
         }
@@ -222,7 +222,7 @@
 
 .video-poster:after {
     content: "";
-    background: url(/img/play-btn.png);
+    background: url(../img/play-btn.png);
     background-size: 56px;
     position: absolute;
     width: 56px;

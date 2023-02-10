@@ -1,6 +1,5 @@
 $(window).scroll(function(){
     var ws=$(this).scrollTop();
-    console.log(ws)
     if(ws>130){
         $("#manybook h2").css("animation","fadeIn 2s forwards");
         $("#manybook p").css("animation","fadeIn 2s forwards");
