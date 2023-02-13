@@ -338,6 +338,10 @@
                                                     letter-spacing: -3px;
                                                 }
                                             }
+                                            .short{
+                                                top: 52px !important;
+                                                background-image: url(../img/badge-short.png);
+                                            }
                                             .pdf{
                                                 top: 26px !important;
                                                 background-image: url(../img/badge-pdf.png);
@@ -370,7 +374,6 @@
                                                             width: 100%;
                                                             height: 100%;
                                                             max-width: 100%;
-                                                            vertical-align: top;
                                                             border-style: none;
                                                             pointer-events: none;
                                                         }
@@ -490,3 +493,266 @@
         }
     }
 }
+
+.bestSellerList{
+    background: #f7f7f7;
+    .section-wrap{
+        padding: 0;
+        background: #fff;
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        .text-wrap{
+            h2 {
+                font-weight: 700;
+                font-size: 49px;
+                line-height: 130%;
+                letter-spacing: -.01em;
+                color: #242424;
+                margin-bottom: 24px;
+                text-align: center;
+                opacity: 0;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 160%;
+                letter-spacing: -.6px;
+                color: #555;
+                text-align: center;
+                opacity: 0;
+            }
+        }
+        .bestSellerList-wrap{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 74px 0 32px;
+            .filter{
+                overflow: hidden;
+                .slide-container{
+                    padding: 0 50px;
+                    overflow: hidden;
+                    cursor: grab;
+                    margin-top: -16px;
+                    .slide-wrapper{
+                        display: inline-flex;
+                        flex-wrap: nowrap;
+                        white-space: nowrap;
+                        padding-right: 24px;
+                        margin-bottom: 4px;
+                        padding-top: 16px;
+                        .slide-item:first-child{
+                            margin-left: 0;
+                        }
+                        .slide-item{
+                            margin-left: 8px;
+                        }
+                        button{
+                            font-size: 14px;
+                            background:transparent;
+                            overflow: hidden;
+                            cursor: pointer;
+                            padding: 6px 16px;
+                            display: block;
+                            border: 1px solid #242424;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.book-shelf {
+    margin: 0 auto;
+
+    .slide-container {
+        margin: 0;
+        overflow: hidden;
+        .slide-wrapper:not(:first-child){
+            display: none;
+        }
+        .slide-wrapper {
+            align-items: baseline;
+            display: inline-flex;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            padding-top: 16px;
+            padding-right: 24px;
+            .slide-item:first-child{
+                margin-left: 50px !important;
+            }
+            .slide-item {
+                cursor: auto;
+                list-style: none;
+                max-width: 161px;
+                width: 20%;
+                min-width: 145px;
+                margin-left: 16px;
+
+                .millie-book {
+                    max-width: 145px;
+                    min-width: 145px;
+                    white-space: nowrap;
+
+                    a {
+                        width: 100%;
+                        cursor: auto;
+                    }
+
+                    .book-image {
+                        display: flex;
+                        align-items: flex-end;
+                        min-height: auto;
+                        padding-top: 0;
+                        height: 100%;
+
+                        .thumbnail {
+                            position: relative;
+                            width: 100%;
+                            display: flex;
+                            align-items: flex-end;
+
+                            .thumbnail-inner {
+                                overflow: hidden;
+                                position: relative;
+                                width: inherit;
+                                background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+                                border-radius: 0 4px 4px 0;
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, 10%), 0 0 2px rgba(0, 0, 0, 20%);
+
+                                .book-picture {
+                                    overflow: hidden;
+                                    position: relative;
+                                    max-height: 240px;
+
+                                    picture {
+                                        position: static;
+                                        opacity: 1;
+                                        transition: opacity .7s;
+
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            max-width: 100%;
+                                            border-style: none;
+                                            pointer-events: none;
+                                        }
+                                    }
+                                }
+
+                                .imageLoaded {
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+                    }
+                    .book-data{
+                        top: 26px;
+                        width: 100%;
+                        .metadata{
+                            padding-top: 12px;
+                            font-size: 12px;
+                            text-align: left;
+                            position: relative;
+                            .reader{
+                                display: block;
+                                background-image: url(../img/label-reader.svg);
+                                padding-left: 42px;
+                                color: #a451f7;
+                                max-height: 1.5em;
+                                line-height: 1.5em;
+                                font-weight: 700;
+                                font-size: 12px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                word-wrap: break-word;
+                                min-width: 37px;
+                                height: 18px;
+                                position: relative;
+                                margin-bottom: 4px;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 0 0;
+                            }
+                            .mp3{
+                                display: block;
+                                background-image: url(../img/label-mp3.svg);
+                                padding-left: 42px;
+                                color: #a451f7;
+                                max-height: 1.5em;
+                                line-height: 1.5em;
+                                font-weight: 700;
+                                font-size: 12px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                word-wrap: break-word;
+                                min-width: 37px;
+                                height: 18px;
+                                position: relative;
+                                margin-bottom: 4px;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 0 0;
+                            }
+                            .title{
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                word-wrap: break-word;
+                                margin-bottom: 3px;
+                                white-space: normal;
+                                -webkit-line-clamp: 2;
+                                color: #242424;
+                                font-weight: 700;
+                                font-size: 16px;
+                                max-height: 3em;
+                            }
+                            .author{
+                                -webkit-line-clamp: 1;
+                                max-height: 1.35em;
+                                color: #6f6f6f;
+                                font-size: 14px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                word-wrap: break-word;
+                                margin-bottom: 3px;
+                                white-space: normal;
+                            }
+                            .reading{
+                                padding-left: 20px;
+                                background: url(../img/icon-complete-reading.svg) no-repeat 0;
+                                background-size: 16px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                word-wrap: break-word;
+                                max-height: 1.35em;
+                                color: #6f6f6f;
+                                font-size: 14px;
+                                white-space: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active{
+    background: #242424 !important;
+    color: #fff;
+}
+
