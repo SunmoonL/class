@@ -31,6 +31,24 @@ a {
     opacity: 1;
   }
 }
+@keyframes card {
+  0% {
+    transform: translate3d(0, 20px, 0) scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(0, 10px, 0) scale(0.9);
+    opacity: 0.2;
+  }
+  75% {
+    transform: translate3d(0, 10px, 0) scale(1.05);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+    opacity: 1;
+  }
+}
 .intro-section {
   background: linear-gradient(#f8faff 67.5%, #f0f4ff 0);
   padding: 64px 0 0;
@@ -141,7 +159,7 @@ a {
   animation: slideRight 100s linear infinite;
 }
 .manybook-section .section-wrap .bookslide-wrap .slide03 {
-  margin: -292px 0;
+  margin: 0 0 -160px;
   background: url(../img/slide03.png) 0/3000px repeat-x;
   animation: slideLeft 100s linear infinite;
 }
@@ -537,6 +555,10 @@ a {
 .bestSellerList .section-wrap .bestSellerList-wrap .filter .slide-container .slide-wrapper .slide-item {
   margin-left: 8px;
 }
+.bestSellerList .section-wrap .bestSellerList-wrap .filter .slide-container .slide-wrapper .active {
+  background: #242424 !important;
+  color: #fff;
+}
 .bestSellerList .section-wrap .bestSellerList-wrap .filter .slide-container .slide-wrapper button {
   font-size: 14px;
   background: transparent;
@@ -725,7 +747,297 @@ a {
   white-space: normal;
 }
 
-.active {
-  background: #242424 !important;
-  color: #fff;
+.section-wrap {
+  padding: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section-wrap .text-wrap h2 {
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin-bottom: 24px;
+  text-align: center;
+  opacity: 0;
+}
+.section-wrap .text-wrap p {
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: -0.6px;
+  color: #555;
+  text-align: center;
+  opacity: 0;
+}
+
+.reading-section {
+  background-color: #f7f7f7;
+  padding: 80px 0 0;
+}
+.reading-section .reading-wrap {
+  padding: 40px 24px 0;
+}
+.reading-section .reading-wrap .content-wrap {
+  position: relative;
+  max-width: 834px;
+  margin: 0 auto;
+}
+.reading-section .reading-wrap .content-wrap .card {
+  position: absolute;
+  max-width: 172px;
+}
+.reading-section .reading-wrap .content-wrap .card img {
+  max-width: 100%;
+  vertical-align: top;
+  border-style: none;
+  pointer-events: none;
+}
+.reading-section .reading-wrap .content-wrap .card01 {
+  left: -10%;
+  top: 50%;
+}
+.reading-section .reading-wrap .content-wrap .card02 {
+  left: 0;
+  top: 12%;
+}
+.reading-section .reading-wrap .content-wrap .card03 {
+  right: 0;
+  top: 12%;
+}
+.reading-section .reading-wrap .content-wrap .card04 {
+  right: -10%;
+  top: 50%;
+}
+.reading-section .reading-wrap .content-wrap .mock {
+  transform: translate(-50%);
+  left: 53%;
+  position: relative;
+  display: inline-block;
+}
+.reading-section .reading-wrap .content-wrap .mock img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.reading-section .reading-wrap .content-wrap .tooltip {
+  border-radius: 8px;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  min-width: 297px;
+}
+.reading-section .reading-wrap .content-wrap .tooltip img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.price-section {
+  background-color: #ffeb60;
+}
+.price-section .section-wrap {
+  padding: 80px 2% 100px;
+}
+.price-section .section-wrap .text-wrap {
+  margin-bottom: 60px;
+}
+.price-section .section-wrap .price-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.price-section .section-wrap .price-wrap .price-list {
+  display: flex;
+  flex-direction: row;
+}
+.price-section .section-wrap .price-wrap .price-list li:first-child {
+  margin-right: 24px;
+}
+.price-section .section-wrap .price-wrap .price-list li {
+  background-color: #fff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  width: 327px;
+}
+.price-section .section-wrap .price-wrap .price-list li strong {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+}
+.price-section .section-wrap .price-wrap .price-list li .month {
+  display: flex;
+  align-items: baseline;
+  margin-top: 24px;
+}
+.price-section .section-wrap .price-wrap .price-list li .month span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  color: #242424;
+  margin-right: 6px;
+}
+.price-section .section-wrap .price-wrap .price-list li .month p {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242424;
+  margin-right: 2px;
+}
+.price-section .section-wrap .price-wrap .price-list li .month p b {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #242424;
+}
+.price-section .section-wrap .price-wrap .price-list li .year {
+  margin: 16px 0 24px;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .basic-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .basic-price p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6f6f6f;
+  margin: 0 8px 0 24px;
+  text-decoration: line-through;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .basic-price img {
+  max-width: 57px;
+  vertical-align: top;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .discount-price {
+  display: flex;
+  align-items: baseline;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .discount-price span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  color: #242424;
+  margin-right: 6px;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .discount-price p {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242424;
+  margin-right: 2px;
+}
+.price-section .section-wrap .price-wrap .price-list li .year .discount-price p b {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #242424;
+}
+.price-section .section-wrap .price-wrap .price-list li .sub-info {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+}
+.price-section .section-wrap .price-wrap .refund-list {
+  margin-left: 35px;
+}
+.price-section .section-wrap .price-wrap .refund-list li:first-child {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fff;
+}
+.price-section .section-wrap .price-wrap .refund-list li {
+  display: flex;
+  align-items: center;
+  flex-wrap: row;
+}
+.price-section .section-wrap .price-wrap .refund-list li img {
+  max-width: 72px;
+  margin-right: 24px;
+}
+.price-section .section-wrap .price-wrap .refund-list li p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+.price-section .section-wrap .price-wrap .refund-list li:last-child {
+  padding-top: 16px;
+}
+
+.content-section {
+  background-color: #f7f7f7;
+}
+.content-section .tab-wrap {
+  background-color: #fff;
+}
+.content-section .tab-wrap ul {
+  max-width: 1156px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.content-section .tab-wrap ul .active {
+  background-color: #f7f7f7;
+}
+.content-section .tab-wrap ul li:first-child {
+  border: none;
+}
+.content-section .tab-wrap ul li:first-child::before {
+  background-image: url(../img/audiobook-border.png);
+}
+.content-section .tab-wrap ul li:last-child::before {
+  background-image: url(../img/viewer-border.png);
+}
+.content-section .tab-wrap ul li::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-52%);
+}
+.content-section .tab-wrap ul li {
+  cursor: pointer;
+  padding: 54px 16px 33px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+.content-section .section-wrap {
+  padding: 74px 142px;
+  position: relative;
+  max-width: 1440px;
+}
+.content-section .section-wrap .introduce {
+  display: flex;
+  align-items: center;
+}
+.content-section .section-wrap .introduce .text-wrap {
+  flex: 1;
+  margin-bottom: 30%;
+  position: relative;
+  min-width: 171px;
+}
+.content-section .section-wrap .introduce .text-wrap h2 {
+  margin-bottom: 16px;
+}
+.content-section .section-wrap .introduce .text-wrap::before {
+  background-image: url(../img/audiobook-icon.png);
+  content: "";
+  width: 44px;
+  height: 44px;
+  background-size: 44px;
+  position: absolute;
+  left: 24px;
+  top: -70px;
+  transform: translate(-50%);
 }

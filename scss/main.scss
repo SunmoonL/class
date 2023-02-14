@@ -18,6 +18,28 @@
     }
 }
 
+@keyframes card {
+    0% {
+        transform: translate3d(0, 20px, 0)scale(.7);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate3d(0, 10px, 0)scale(.9);
+        opacity: .2;
+    }
+
+    75% {
+        transform: translate3d(0, 10px, 0)scale(1.05);
+        opacity: .6;
+    }
+
+    100% {
+        transform: translateZ(0) scale(1);
+        opacity: 1;
+    }
+}
+
 
 .intro-section {
     background: linear-gradient(#f8faff 67.5%, #f0f4ff 0);
@@ -143,7 +165,7 @@
             }
 
             .slide03 {
-                margin: -292px 0;
+                margin: 0 0 -160px;
                 background: url(../img/slide03.png) 0/ 3000px repeat-x;
                 animation: slideLeft 100s linear infinite;
             }
@@ -547,6 +569,10 @@
                         .slide-item{
                             margin-left: 8px;
                         }
+                        .active{
+                            background: #242424 !important;
+                            color: #fff;
+                        }
                         button{
                             font-size: 14px;
                             background:transparent;
@@ -590,7 +616,6 @@
                 width: 20%;
                 min-width: 145px;
                 margin-left: 16px;
-
                 .millie-book {
                     max-width: 145px;
                     min-width: 145px;
@@ -751,8 +776,309 @@
     }
 }
 
-.active{
-    background: #242424 !important;
-    color: #fff;
+.section-wrap{
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    .text-wrap{
+        h2 {
+            font-weight: 700;
+            font-size: 49px;
+            line-height: 130%;
+            letter-spacing: -.01em;
+            color: #242424;
+            margin-bottom: 24px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 160%;
+            letter-spacing: -.6px;
+            color: #555;
+            text-align: center;
+            opacity: 0;
+        }
+    }
+}
+
+.reading-section{
+    background-color: #f7f7f7;
+    padding: 80px 0 0;
+    .reading-wrap{
+        padding: 40px 24px 0;
+        .content-wrap{
+            position: relative;
+            max-width: 834px;
+            margin: 0 auto;
+            .card{
+                position: absolute;
+                max-width: 172px;
+                img{
+                    max-width: 100%;
+                    vertical-align: top;
+                    border-style: none;
+                    pointer-events: none;
+                }
+            }
+            .card01{
+                left: -10%;
+                top: 50%;
+            }
+            .card02{
+                left: 0;
+                top: 12%;
+            }
+            .card03{
+                right: 0;
+                top: 12%;
+            }
+            .card04{
+                right: -10%;
+                top: 50%;
+            }
+            .mock{
+                transform: translate(-50%);
+                left: 53%;
+                position: relative;
+                display: inline-block;
+                img{
+                    max-width: 100%;
+                    vertical-align: top;
+                }
+
+            }
+            .tooltip{
+                border-radius: 8px;
+                position: absolute;
+                top: 49%;
+                left: 50%;
+                transform: translate(-50%);
+                box-shadow: 10px 10px 40px rgb(0 0 0 / 10%);
+                min-width: 297px;
+                img{
+                    max-width: 100%;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
+
+.price-section{
+    background-color: #ffeb60;
+    .section-wrap{
+        padding: 80px 2% 100px;
+        .text-wrap{
+            margin-bottom: 60px;
+        }
+        .price-wrap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1024px;
+            .price-list{
+                display: flex;
+                flex-direction: row;
+
+                li:first-child{
+                    margin-right: 24px;
+                }
+
+                li{
+                    background-color: #fff;
+                    box-shadow: 10px 10px 40px rgb(0 0 0 / 10%);
+                    border-radius: 16px;
+                    padding: 32px;
+                    width: 327px;
+                    strong{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #242424;
+                    }
+                    .month{
+                        display: flex;
+                        align-items: baseline;
+                        margin-top: 24px;
+                        span{
+                            font-weight: 300;
+                            font-size: 24px;
+                            line-height: 130%;
+                            color: #242424;
+                            margin-right: 6px;
+                        }
+                        p{
+                            font-weight: 900;
+                            font-size: 40px;
+                            line-height: 100%;
+                            color: #242424;
+                            margin-right: 2px;
+                            b{
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 130%;
+                                color: #242424;
+                            }
+                        }
+                    }
+                    .year{
+                        margin: 16px 0 24px;
+
+                        .basic-price{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            p{
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #6f6f6f;
+                                margin: 0 8px 0 24px;
+                                text-decoration: line-through;
+                            }
+
+                            img{
+                                max-width: 57px;
+                                vertical-align: top;
+                            }
+                        }
+                        .discount-price{
+                            display: flex;
+                            align-items: baseline;
+                            span{
+                                font-weight: 300;
+                                font-size: 24px;
+                                line-height: 130%;
+                                color: #242424;
+                                margin-right: 6px;
+                            }
+                            p{
+                                font-weight: 900;
+                                font-size: 40px;
+                                line-height: 100%;
+                                color: #242424;
+                                margin-right: 2px;
+                                b{
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 130%;
+                                    color: #242424;
+                                }
+                            }
+                        }
+                    }
+                    .sub-info{
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #6f6f6f;
+                    }
+                }
+            }
+            .refund-list{
+                margin-left: 35px;
+                li:first-child{
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #fff;
+                }
+                li{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: row;
+                    img{
+                        max-width: 72px;
+                        margin-right: 24px;
+                    }
+                    p{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #242424;
+                    }
+                }
+                li:last-child{
+                    padding-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+.content-section{
+    background-color: #f7f7f7;
+    .tab-wrap{
+        background-color: #fff;
+        ul{
+            max-width: 1156px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            .active{
+                background-color: #f7f7f7;
+            }
+            li:first-child{
+                border: none;
+            }
+            li:first-child::before{
+                background-image: url(../img/audiobook-border.png);
+            }
+            li:last-child::before{
+                background-image: url(../img/viewer-border.png);
+            }
+            li::before{
+                content: "";
+                width: 24px;
+                height: 24px;
+                background-size: 24px;
+                position: absolute;
+                left: 50%;
+                top: 25%;
+                transform: translate(-52%);
+            }
+            li{
+                cursor: pointer;
+                padding: 54px 16px 33px;
+                background-color: #fff;
+                text-align: center;
+                position: relative;
+                flex: 1;
+            }
+        }
+    }
+    .section-wrap{
+        padding: 74px 142px;
+        position: relative;
+        max-width: 1440px;
+        .introduce{
+            display: flex;
+            align-items: center;
+            .text-wrap{
+                flex: 1;
+                margin-bottom: 30%;
+                position: relative;
+                min-width: 171px;
+                h2{
+                    margin-bottom: 16px;
+                }
+                p{
+                    
+                }
+            }
+            .text-wrap::before{
+                background-image: url(../img/audiobook-icon.png);
+                content: "";
+                width: 44px;
+                height: 44px;
+                background-size: 44px;
+                position: absolute;
+                left: 24px;
+                top: -70px;
+                transform: translate(-50%);
+            }
+        }
+    }
 }
 
