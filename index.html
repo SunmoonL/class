@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 
@@ -42,7 +44,7 @@
                     </div>
                 </section>
 
-                <section id="intro" class="intro-section animation">
+                <section id="intro" class="intro-section">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h1>당신의 일상을 1밀리+ 독서와 무제한 친해지리</h1>
@@ -51,7 +53,7 @@
                     </div>
                 </section>
 
-                <section id="manybook" class="manybook-section animation">
+                <section id="manybook" class="manybook-section">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h2>
@@ -71,7 +73,7 @@
                     </div>
                 </section>
 
-                <section id="audiodrama" class="audiodrama-section animation">
+                <section id="audiodrama" class="audiodrama-section">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h2>
@@ -103,7 +105,7 @@
                     </div>
                 </section>
 
-                <section id="unlimited" class="unlimited-section animation">
+                <section id="unlimited" class="unlimited-section">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h2>싹 다 무제한<br>9,900원</h2>
@@ -694,7 +696,7 @@
                     </div>
                 </section>
 
-                <section id="bestseller" class="bestSellerList animation">
+                <section id="bestseller" class="bestSellerList">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h2>관심 분야에 있는 책도<br>딱 골라드려요</h2>
@@ -1365,7 +1367,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="reading" class="reading-section animation">
+                <section id="reading" class="reading-section">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h2>
@@ -1377,7 +1379,7 @@
                                 다 읽을 확률과 예상 시간을 알려드려요
                             </p>
                         </div>
-                        <div class="reading-wrap animation">
+                        <div class="reading-wrap">
                             <div class="content-wrap">
                                 <div class="card-wrap">
                                     <div class="card card01"><img src="img/reading-card01.png" alt="홀릭"></div>
@@ -1394,7 +1396,7 @@
                     </div>
                 </section>
 
-                <section id="price" class="price-section animation">
+                <section id="price" class="price-section">
                     <div class="section-wrap">
                         <div class="text-wrap">
                             <h2>언제든 해지 가능!<br>첫 달 무료로 가볍게</h2>
@@ -1446,21 +1448,22 @@
                                     <p>무료 체험 기간 동안 해지해도<br>금액이 청구되지 않아요</p>
                                 </li>
                                 <li>
-                                <img src="img/price02.png" alt="유료 결제되어도 사용 이력이 없으면 즉시 환불해드려요">
-                                <p>유료 결제되어도 사용 이력이<br>없으면 즉시 환불해드려요</p>
+                                    <img src="img/price02.png" alt="유료 결제되어도 사용 이력이 없으면 즉시 환불해드려요">
+                                    <p>유료 결제되어도 사용 이력이<br>없으면 즉시 환불해드려요</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <section id="content" class="content-section audiobook animation">
+                <section id="content" class="content-section audiobook">
                     <div class="tab-wrap">
                         <ul>
                             <li class="brandContent active audiobook"> 오디오북 </li>
                             <li class="brandContent viewer"> 밀리 뷰어 </li>
                         </ul>
                     </div>
+                    <!-- 오디오북 -->
                     <div class="section-wrap">
                         <div class="introduce">
                             <div class="text-wrap audiobook">
@@ -1470,79 +1473,180 @@
                             <div class="phone-wrap">
                                 <div class="phone-shape">
                                     <img src="img/mark.png" alt="밀리 오디오북">
-                                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight" style="cursor: grab;">
+                                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight"
+                                        style="cursor: grab;">
 
-                                    <div class="swiper-wrapper" style="transform: translate3d(-336px,0px,0px); transition-duration: 0ms;">
+                                        <div class="swiper-wrapper">
 
-                                    <div class="slide-item swiper-slide swiper-slide-prev" style="width:320px; margin-right: 16px;">
-                                        <div class="screen-wrap">
-                                            <div class="screen-content">
-                                                <img src="img/audiobook-content04.png" alt="">
-                                                <div class="video-wrap" style="display: none;">
-                                                <video src="img/audiobook-content04.png" autoplay="autoplay" preload="auto" muted="muted" loop="loop" playsinline></video>
+                                            <div class="slide-item swiper-slide swiper-slide-prev"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/audiobook-content04.png" alt="">
+                                                        <div class="video-wrap" style="display: none;">
+                                                            <video src="img/audiobook-content04.png" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="slide-item swiper-slide swiper-slide-active" style="width:320px; margin-right: 16px;">
-                                        <div class="screen-wrap">
-                                            <div class="screen-content">
-                                                <img src="img/audiobook2.mp4" alt="" style="display: none;">
-                                                <div class="video-wrap">
-                                                <video src="img/audiobook2.mp4" autoplay="autoplay" preload="auto" muted="muted" loop="loop" playsinline></video>
+                                            <div class="slide-item swiper-slide swiper-slide-active"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/audiobook2.mp4" alt="" style="display: none;">
+                                                        <div class="video-wrap">
+                                                            <video src="img/audiobook2.mp4" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="slide-item swiper-slide swiper-slide-next" style="width:320px; margin-right: 16px;">
-                                        <div class="screen-wrap">
-                                            <div class="screen-content">
-                                                <img src="img/audiobook-content01.png" alt="">
-                                                <div class="video-wrap" style="display: none;">
-                                                <video src="img/audiobook-content01.png" autoplay="autoplay" preload="auto" muted="muted" loop="loop" playsinline></video>
+                                            <div class="slide-item swiper-slide swiper-slide-next"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/audiobook-content01.png" alt="">
+                                                        <div class="video-wrap" style="display: none;">
+                                                            <video src="img/audiobook-content01.png" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="slide-item swiper-slide" style="width:320px; margin-right: 16px;">
-                                        <div class="screen-wrap">
-                                            <div class="screen-content">
-                                                <img src="img/audiobook-content02.png" alt="">
-                                                <div class="video-wrap" style="display: none;">
-                                                <video src="img/audiobook-content02.png" autoplay="autoplay" preload="auto" muted="muted" loop="loop" playsinline></video>
+                                            <div class="slide-item swiper-slide"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/audiobook-content02.png" alt="">
+                                                        <div class="video-wrap" style="display: none;">
+                                                            <video src="img/audiobook-content02.png" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>
-                                    </div>
-
-                                    </div>
-
-                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slide-data">
                             <p>
-                                <b>하루의 시작과 마무리를 오디오북과 함께<br>지하철에서도, 잠들기 전에도 독서하세요</b>
+                                <b>하루의 시작과 마무리를 오디오북과 함께</b><br>지하철에서도, 잠들기 전에도 독서하세요
+                            </p>
+                            <p>
+                                <b>귀로 듣다가 눈으로도 같이 보면</b><br>더 내용이 잘 이해돼요
+                            </p>
+                            <p>
+                                <b>30분만에 책 요약</b><br>핵심만 쏙 골라 읽어주는 오디오북
+                            </p>
+                            <p>
+                                <b>이제훈부터 옥주현까지</b><br>셀럽이 읽어주는 오디오북
                             </p>
                             <div class="pagination-wrap">
                                 <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                                    <span class="swiper-pagination-bullets" tabindex="0" role="button" aria-level="Go to slide 1">
-                                        <button>1</button>
-                                    </span>
-                                    <span class="swiper-pagination-bullets" tabindex="0" role="button" aria-level="Go to slide 1">
-                                        <button>2</button>
-                                    </span>
-                                    <span class="swiper-pagination-bullets" tabindex="0" role="button" aria-level="Go to slide 1">
-                                        <button>3</button>
-                                    </span>
-                                    <span class="swiper-pagination-bullets" tabindex="0" role="button" aria-level="Go to slide 1">
-                                        <button>4</button>
-                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 밀리뷰어 -->
+                    <div class="section-wrap1">
+                        <div class="introduce">
+                            <div class="text-wrap audiobook">
+                                <h2>밀리 뷰어</h2>
+                                <p>독서를 위한 가장<br>완벽한 도구</p>
+                            </div>
+                            <div class="phone-wrap">
+                                <div class="phone-shape">
+                                    <img src="img/mark.png" alt="밀리 오디오북">
+                                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight"
+                                        style="cursor: grab;">
+                                        <div class="swiper-wrapper">
+                                            <div class="slide-item swiper-slide swiper-slide-prev"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/sight2.mp4" alt="" style="display: none;">
+                                                        <div class="video-wrap">
+                                                            <video src="img/sight2.mp4" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item swiper-slide swiper-slide-active"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/viewer-content01.png" alt="">
+                                                        <div class="video-wrap">
+                                                            <video src="img/viewer-content01.png" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop" playsinline
+                                                                style="display: none;"></video>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item swiper-slide swiper-slide-next"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/darkmode2.mp4" alt="" style="display: none;">
+                                                        <div class="video-wrap">
+                                                            <video src="img/darkmode2.mp4" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item swiper-slide"
+                                                style="width:320px; margin-right: 16px;">
+                                                <div class="screen-wrap">
+                                                    <div class="screen-content">
+                                                        <img src="img/viewer_system2.mp4" alt="" style="display: none;">
+                                                        <div class="video-wrap">
+                                                            <video src="img/viewer_system2.mp4" autoplay="autoplay"
+                                                                preload="auto" muted="muted" loop="loop"
+                                                                playsinline></video>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-data1">
+                            <p>
+                                <b>시선 추적 기능</b><br>눈동자로 페이지를 넘길 수 있어요
+                            </p>
+                            <p>
+                                <b>어느 기기에서도 OK</b><br>스마트폰,태블릿,PC,E ink 기기까지
+                            </p>
+                            <p>
+                                <b>다크 모드</b><br>전자책이 눈 아프다는 편견은 버려요
+                            </p>
+                            <p>
+                                <b>자유로운 보기 설정</b><br>줄간격부터 폰트까지 내 마음대로 설정하면<br>더욱 편한 독서를 할 수 있어요
+                            </p>
+                            <div class="pagination-wrap">
+                                <div class="swiper-pagination1 swiper-pagination-clickable swiper-pagination-bullets">
                                 </div>
                             </div>
                         </div>

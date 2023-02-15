@@ -1,7 +1,10 @@
 $(window).scroll(function () {
     var ws = $(this).scrollTop();
-    console.log(ws);
-    $("#manybook > div > div.text-wrap > h2").offset().top;
+    if($("#intro > div > div > h1").offset().top -600 < ws){
+        $("#intro h1").css("animation", "fadeIn 1.8s forwards");
+        $("#intro p").css("animation", "fadeIn 1.2s .6s forwards");
+    }
+
     if ($("#manybook > div > div.text-wrap > h2").offset().top < ws+800) {
         $("#manybook h2").css("animation", "fadeIn 2s forwards");
         $("#manybook p").css("animation", "fadeIn 2s forwards");
@@ -9,14 +12,22 @@ $(window).scroll(function () {
     if ($("#audiodrama > div > div.text-wrap > h2").offset().top < ws+800) {
         $("#audiodrama h2").css("animation", "fadeIn 2s forwards");
         $("#audiodrama p").css("animation", "fadeIn 2s forwards");
+        $("#manybook h2").css("animation", "fadeOut .1s forwards");
+        $("#manybook p").css("animation", "fadeOut .1s forwards");
+        $("#intro h1").css("animation", "fadeOut .1s forwards");
+        $("#intro p").css("animation", "fadeOut .1s forwards");
     }
     if ($("#unlimited > div > div.text-wrap > h2").offset().top < ws+800) {
         $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#unlimited > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
+        $("#audiodrama h2").css("animation", "fadeOut .1s forwards");
+        $("#audiodrama p").css("animation", "fadeOut .1s forwards");
     }
     if ($("#bestseller > div > div.text-wrap > h2").offset().top < ws+800) {
         $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#bestseller > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
+        $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#unlimited > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
     }
     if ($("#reading > div > div.text-wrap > h2").offset().top < ws+800) {
         $("#reading > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
@@ -25,10 +36,26 @@ $(window).scroll(function () {
         $(".card02").css("animation","card .7s ease-in-out forwards");
         $(".card03").css("animation","card 1s ease-in-out forwards");
         $(".card04").css("animation","card 1.1s ease-in-out forwards");
+        $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#bestseller > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
     }
     if ($("#price > div > div.text-wrap > h2").offset().top < ws+800) {
         $("#price > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#price > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
+        
+    }
+    if ($("#content > div > div > div.text-wrap > h2").offset().top < ws+800) {
+        $("#content > div > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
+        $("#content > div > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
+        $(".phone-wrap").css("animation", "fadeIn 1.5s forwards");
+        $("#price > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#price > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+        $("#reading > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#reading > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+        $(".card01").css("animation","fadeOut .1s ease-in-out forwards");
+        $(".card02").css("animation","fadeOut .1s ease-in-out forwards");
+        $(".card03").css("animation","fadeOut .1s ease-in-out forwards");
+        $(".card04").css("animation","fadeOut .1s ease-in-out forwards");
     }
 });
 
@@ -435,3 +462,45 @@ $(function(){
     });
 });
 });
+
+$(document).ready(function(){
+var swiper = new Swiper(".swiper-container", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' +"<button>"+ (index + 1)+"</button>" + "</span>";
+      },
+    },
+    on: {
+        slideChange: function () {
+            var has = $(".swiper-pagination-bullet-active").index();
+          //   console.log(has);
+
+            $(".slide-data > p").eq(has).show();
+            $(".slide-data > p").eq(has).siblings("p").hide();
+        },
+    }
+  });
+});
+
+$(document).ready(function(){
+    var swiper1 = new Swiper(".swiper-container1", {
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' +"<button>"+ (index + 1)+"</button>" + "</span>";
+          },
+        },
+        on: {
+            slideChange: function () {
+                var has1 = $(".swiper-pagination1 .swiper-pagination-bullet-active").index();
+              //   console.log(has);
+    
+                $(".slide-data1 > p").eq(has).show();
+                $(".slide-data1 > p").eq(has).siblings("p").hide();
+            },
+        }
+      });
+    });
