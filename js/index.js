@@ -4,12 +4,16 @@ $(window).scroll(function () {
         $("#intro h1").css("animation", "fadeIn 1.8s forwards");
         $("#intro p").css("animation", "fadeIn 1.2s .6s forwards");
     }
+    if($("#manybook > div > div.text-wrap > h2").offset().top > ws+600){
+        $("#manybook h2").css("animation", "fadeOut .1s forwards");
+        $("#manybook p").css("animation", "fadeOut .1s forwards");
+    }
 
-    if ($("#manybook > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#manybook > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#manybook h2").css("animation", "fadeIn 2s forwards");
         $("#manybook p").css("animation", "fadeIn 2s forwards");
     }
-    if ($("#audiodrama > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#audiodrama > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#audiodrama h2").css("animation", "fadeIn 2s forwards");
         $("#audiodrama p").css("animation", "fadeIn 2s forwards");
         $("#manybook h2").css("animation", "fadeOut .1s forwards");
@@ -17,19 +21,19 @@ $(window).scroll(function () {
         $("#intro h1").css("animation", "fadeOut .1s forwards");
         $("#intro p").css("animation", "fadeOut .1s forwards");
     }
-    if ($("#unlimited > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#unlimited > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#unlimited > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         $("#audiodrama h2").css("animation", "fadeOut .1s forwards");
         $("#audiodrama p").css("animation", "fadeOut .1s forwards");
     }
-    if ($("#bestseller > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#bestseller > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#bestseller > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
         $("#unlimited > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
     }
-    if ($("#reading > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#reading > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#reading > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#reading > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         $(".card01").css("animation","card .5s ease-in-out forwards");
@@ -39,12 +43,12 @@ $(window).scroll(function () {
         $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
         $("#bestseller > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
     }
-    if ($("#price > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#price > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#price > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#price > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         
     }
-    if ($("#content > div > div > div.text-wrap > h2").offset().top < ws+800) {
+    if ($("#content > div > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#content > div > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#content > div > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         $(".phone-wrap").css("animation", "fadeIn 1.5s forwards");
@@ -57,13 +61,29 @@ $(window).scroll(function () {
         $(".card03").css("animation","fadeOut .1s ease-in-out forwards");
         $(".card04").css("animation","fadeOut .1s ease-in-out forwards");
     }
+    if ($("#review > div > div > div.text-wrap > h2").offset().top < ws+600){
+        $("#review > div > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
+        $("#review > div > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
+    }
+    if ($("#qna > div > div.text-wrap > h2").offset().top < ws+400){
+        $("#review > div > div > div.text-wrap > h2").css("animation","fadeOut .1s ease-in-out forwards");
+        $("#review > div > div > div.text-wrap > p").css("animation","fadeOut .1s ease-in-out forwards");
+        $("#content > div > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#content > div > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+        $(".phone-wrap").css("animation", "fadeOut .1s forwards");
+    }
 });
 
 $(function () {
-    $(".video-poster").click(function () {
+    $("#audiodrama .video-poster").click(function () {
         $(this).css("opacity", "0");
-        $(".iframe-video").show();
-        $(".youtube-player > iframe").attr("src", "https://www.youtube.com/embed/u1OVbU4EdwI?autoplay=1&mute=1");
+        $("#audiodrama .iframe-video").show();
+        $("#audiodrama .youtube-player > iframe").attr("src", "https://www.youtube.com/embed/u1OVbU4EdwI?autoplay=1&mute=1");
+    });
+    $(".review-video").click(function () {
+        $(this).css("opacity", "0");
+        $("#review .iframe-video").show();
+        $("#review .youtube-player > iframe").attr("src", "https://www.youtube.com/embed/c-XG8k_w1LM?autoplay=1&mute=1");
     });
 });
 
@@ -495,12 +515,39 @@ $(document).ready(function(){
         },
         on: {
             slideChange: function () {
-                var has1 = $(".swiper-pagination1 .swiper-pagination-bullet-active").index();
+                var has1 = $(".swiper-pagination1 > .swiper-pagination-bullet-active").index();
               //   console.log(has);
     
-                $(".slide-data1 > p").eq(has).show();
-                $(".slide-data1 > p").eq(has).siblings("p").hide();
+                $(".slide-data1 > p").eq(has1).show();
+                $(".slide-data1 > p").eq(has1).siblings("p").hide();
             },
         }
       });
+    });
+
+    $(document).ready(function(){
+        $("#content > div.tab-wrap > ul > li.brandContent.active.audiobook").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $("#content > div.section-wrap").show();
+            $("#content > div.section-wrap1").hide();
+        });
+
+        $("#content > div.tab-wrap > ul > li.brandContent.viewer").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $("#content > div.section-wrap").hide();
+            $("#content > div.section-wrap1").show();
+        });
+    });
+
+    $(function(){
+        $("#qna > div > div.qna-wrap > ul > li").click(function(){
+            $(this).toggleClass("active");
+        });
+    });
+
+    $(function(){
+        $(".about-button").click(function(){
+            $(this).toggleClass("show");
+            $(this).siblings(".question").toggle();
+        });
     });
