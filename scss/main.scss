@@ -1429,6 +1429,9 @@
                 display: none;
                 .youtube-player{
                     height: 100%;
+                    iframe{
+                        border: none;
+                    }
                 }
             }
             .text-wrap{

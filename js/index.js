@@ -4,7 +4,7 @@ $(window).scroll(function () {
         $("#intro h1").css("animation", "fadeIn 1.8s forwards");
         $("#intro p").css("animation", "fadeIn 1.2s .6s forwards");
     }
-    if($("#manybook > div > div.text-wrap > h2").offset().top > ws+600){
+    if($("#manybook > div > div.text-wrap > h2").offset().top > ws+800){
         $("#manybook h2").css("animation", "fadeOut .1s forwards");
         $("#manybook p").css("animation", "fadeOut .1s forwards");
     }
@@ -21,17 +21,31 @@ $(window).scroll(function () {
         $("#intro h1").css("animation", "fadeOut .1s forwards");
         $("#intro p").css("animation", "fadeOut .1s forwards");
     }
+    if ($("#audiodrama > div > div.text-wrap > h2").offset().top > ws+1000) {
+        $("#audiodrama h2").css("animation", "fadeOut .1s forwards");
+        $("#audiodrama p").css("animation", "fadeOut .1s forwards");}
+
     if ($("#unlimited > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#unlimited > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         $("#audiodrama h2").css("animation", "fadeOut .1s forwards");
         $("#audiodrama p").css("animation", "fadeOut .1s forwards");
     }
+
+    if ($("#unlimited > div > div.text-wrap > h2").offset().top > ws+1000) {
+        $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#unlimited > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+    }
+
     if ($("#bestseller > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#bestseller > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
         $("#unlimited > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
         $("#unlimited > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+    }
+    if ($("#bestseller > div > div.text-wrap > h2").offset().top > ws+1000) {
+        $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#bestseller > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
     }
     if ($("#reading > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#reading > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
@@ -42,6 +56,16 @@ $(window).scroll(function () {
         $(".card04").css("animation","card 1.1s ease-in-out forwards");
         $("#bestseller > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
         $("#bestseller > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+    }
+    if ($("#reading > div > div.text-wrap > h2").offset().top > ws+1000) {
+        $("#price > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#price > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+        $("#reading > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#reading > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+        $(".card01").css("animation","fadeOut .1s ease-in-out forwards");
+        $(".card02").css("animation","fadeOut .1s ease-in-out forwards");
+        $(".card03").css("animation","fadeOut .1s ease-in-out forwards");
+        $(".card04").css("animation","fadeOut .1s ease-in-out forwards");
     }
     if ($("#price > div > div.text-wrap > h2").offset().top < ws+600) {
         $("#price > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
@@ -61,9 +85,18 @@ $(window).scroll(function () {
         $(".card03").css("animation","fadeOut .1s ease-in-out forwards");
         $(".card04").css("animation","fadeOut .1s ease-in-out forwards");
     }
+    if ($("#content > div > div > div.text-wrap > h2").offset().top > ws+1000) {
+        $("#content > div > div > div.text-wrap > h2").css("animation", "fadeOut .1s forwards");
+        $("#content > div > div > div.text-wrap > p").css("animation", "fadeOut .1s forwards");
+        $(".phone-wrap").css("animation", "fadeOut .1s forwards");
+    }
     if ($("#review > div > div > div.text-wrap > h2").offset().top < ws+600){
         $("#review > div > div > div.text-wrap > h2").css("animation", "fadeIn 2s forwards");
         $("#review > div > div > div.text-wrap > p").css("animation", "fadeIn 2s forwards");
+    }
+    if ($("#review > div > div > div.text-wrap > h2").offset().top > ws+1000){
+        $("#review > div > div > div.text-wrap > h2").css("animation","fadeOut .1s ease-in-out forwards");
+        $("#review > div > div > div.text-wrap > p").css("animation","fadeOut .1s ease-in-out forwards");
     }
     if ($("#qna > div > div.text-wrap > h2").offset().top < ws+400){
         $("#review > div > div > div.text-wrap > h2").css("animation","fadeOut .1s ease-in-out forwards");
@@ -551,3 +584,7 @@ $(document).ready(function(){
             $(this).siblings(".question").toggle();
         });
     });
+
+    function moveTo(){
+        location.assign("https://www.millie.co.kr/v3/intro")
+    };

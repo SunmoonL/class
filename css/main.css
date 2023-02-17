@@ -1264,6 +1264,9 @@ a {
 .review-section .review-section-bg .section-wrap .iframe-video .youtube-player {
   height: 100%;
 }
+.review-section .review-section-bg .section-wrap .iframe-video .youtube-player iframe {
+  border: none;
+}
 .review-section .review-section-bg .section-wrap .text-wrap {
   padding-top: 80px;
   margin-left: auto;
