@@ -2,3 +2,125 @@
 
 @import "reset";
 
+#wrap {
+    height: 100%;
+}
+
+#intro {
+    padding-top: 100px;
+    border-bottom: 1px solid #ddd;
+
+    .intro-wrap {
+        width: 1200px;
+        margin: 0 auto;
+        height: auto;
+        position: relative;
+
+        .logo {
+            max-width: 80px;
+            display: inline-block;
+            line-height: 50px;
+            vertical-align: middle;
+
+            img {
+                max-width: 100%;
+                line-height: 50px;
+                vertical-align: middle;
+            }
+        }
+
+        > span {
+            line-height: 50px;
+            vertical-align: top;
+            margin-left: 10px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        input {
+            vertical-align: top;
+            line-height: 50px;
+            margin-left: 50px;
+            width: 550px;
+            border-radius: 10px;
+            padding-left: 20px;
+            font-size: 20px;
+            border: 2px solid #242424;
+            position: relative;
+        }
+
+        i {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 410px;
+        }
+
+        i::after {
+            content: "";
+            background: url(../sub_img/search.png) no-repeat;
+            background-size: 25px;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        #site {
+            height: 48px;
+            margin-top: 40px;
+
+            > img {
+                cursor: pointer;
+                float: left;
+                margin-right: 40px;
+            }
+
+            div {
+                max-width: 825px;
+                height: 48px;
+                overflow: hidden;
+                display: inline-block;
+
+                #intro-slide {
+                    width: 1650px;
+                    li {
+                        width: 165px;
+                        float: left;
+                        a{
+                            padding: 6px 10px 6px 0;
+                            display: block;
+                            height: 36px;
+                            img{
+                                float: left;
+                            }
+                            span{
+                                display: block;
+                                word-wrap: break-word;
+                                word-break: break-word;
+                                text-overflow: ellipsis;
+                                font-size: 12px;
+                                height: 36px;
+                                margin-left: 48px;
+                                margin-top: 3px;
+                                color: #777;
+                            }
+                        }
+                    }
+                }
+            }
+            #intro-click{
+                max-width: 810px;
+                a{
+                    img{
+                        margin-left: 5px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
