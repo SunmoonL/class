@@ -86,28 +86,28 @@ a {
   float: left;
   margin-right: 40px;
 }
-#intro .intro-wrap #site div {
+#intro .intro-wrap #site #slide-wrap {
   max-width: 825px;
   height: 48px;
   overflow: hidden;
   display: inline-block;
 }
-#intro .intro-wrap #site div #intro-slide {
+#intro .intro-wrap #site #slide-wrap #intro-slide {
   width: 1650px;
 }
-#intro .intro-wrap #site div #intro-slide li {
+#intro .intro-wrap #site #slide-wrap #intro-slide li {
   width: 165px;
   float: left;
 }
-#intro .intro-wrap #site div #intro-slide li a {
+#intro .intro-wrap #site #slide-wrap #intro-slide li a {
   padding: 6px 10px 6px 0;
   display: block;
   height: 36px;
 }
-#intro .intro-wrap #site div #intro-slide li a img {
+#intro .intro-wrap #site #slide-wrap #intro-slide li a img {
   float: left;
 }
-#intro .intro-wrap #site div #intro-slide li a span {
+#intro .intro-wrap #site #slide-wrap #intro-slide li a span {
   display: block;
   word-wrap: break-word;
   word-break: break-word;
@@ -120,9 +120,157 @@ a {
 }
 #intro .intro-wrap #site #intro-click {
   max-width: 810px;
+  display: inline-block;
+  vertical-align: top;
 }
 #intro .intro-wrap #site #intro-click a img {
   margin-left: 5px;
   margin-top: 5px;
   cursor: pointer;
+}
+#intro .intro-wrap #site #site_map {
+  margin-top: -4px;
+  width: 894px;
+  position: relative;
+  display: none;
+}
+#intro .intro-wrap #site #site_map ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 900px;
+  height: 450px;
+  background: #fff;
+  border: 1px solid #464b6f;
+}
+#intro .intro-wrap #site #site_map ul li {
+  cursor: pointer;
+  width: 160px;
+  line-height: 54px;
+  height: 54px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 3.75px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #464b6f;
+  border: 1px solid #d1d8e3;
+  font-size: 16px;
+}
+#intro .intro-wrap #site #site_map ul li:hover {
+  color: #fff;
+  background-color: #464b6f;
+}
+#intro .intro-wrap #site #site_map a {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  background: #464b6f url(../sub_img/close_white_s.png) no-repeat 4px 4px;
+  width: 24px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+#content {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#content #small_nav {
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+#content #small_nav ul {
+  width: 230px;
+}
+#content #small_nav ul li {
+  float: left;
+  font-size: 12px;
+  color: #333333;
+}
+#content #small_nav ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 15px;
+  background: url(../sub_img/paging_next.png) no-repeat 7px 3px;
+  float: right;
+}
+#content #small_nav #btn_box a:first-child {
+  background: url(../sub_img/share.png) no-repeat;
+  margin-right: 40px;
+  padding-left: 30px;
+  padding-bottom: 6px;
+}
+#content #small_nav #btn_box a:last-child {
+  background: url(../sub_img/keep_m.png) no-repeat;
+  margin-right: 40px;
+  padding-left: 30px;
+  padding-bottom: 6px;
+}
+#content #small_nav #btn_box a {
+  font-size: 12px;
+  color: #999999;
+  padding-top: 3px;
+}
+#content #detail {
+  margin-bottom: 60px;
+}
+#content #detail #box_image {
+  float: left;
+  width: 482px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#content #detail #box_image #image_detail {
+  padding: 0px 100px;
+  margin-bottom: 45px;
+}
+#content #detail #box_image #image_detail img {
+  max-width: 100%;
+}
+#content #detail #box_image .review_star {
+  margin: 0 auto 12px;
+  background: url(../sub_img/star_b.png) no-repeat 0 0;
+  width: 127px;
+  height: 23px;
+  padding-top: 35px;
+  position: relative;
+}
+#content #detail #box_image .review_star span {
+  background: url(../sub_img/star_b_on.png) no-repeat 0 0;
+  height: 23px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+}
+#content #detail #detail_info {
+  float: right;
+  width: 577px;
+}
+#content #detail #detail_info h2 {
+  color: #212121;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+#content #detail #detail_info .info_book {
+  margin-bottom: 17px;
+}
+#content #detail #detail_info .info_book div {
+  display: inline-block;
+  padding: 0 12px;
+  background-color: #ebedf7;
+  color: #464b6f;
+  line-height: 26px;
+  font-size: 12px;
+  box-shadow: 0px 2px 7px rgba(160, 162, 171, 0.12);
+  border-radius: 13px;
+  margin-bottom: 8px;
+  position: relative;
 }
