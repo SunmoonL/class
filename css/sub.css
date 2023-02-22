@@ -219,6 +219,9 @@ a {
 }
 #content #detail {
   margin-bottom: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 1200px;
 }
 #content #detail #box_image {
   float: left;
@@ -254,6 +257,24 @@ a {
   float: right;
   width: 577px;
 }
+#content #detail #detail_info > div:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#content #detail #detail_info > strong {
+  float: left;
+  width: 120px;
+  font-size: 15px;
+  line-height: 27px;
+  color: #212121;
+  display: block;
+}
+#content #detail #detail_info .right_box {
+  float: right;
+  width: 456px;
+  position: relative;
+}
 #content #detail #detail_info h2 {
   color: #212121;
   margin-bottom: 20px;
@@ -273,4 +294,236 @@ a {
   border-radius: 13px;
   margin-bottom: 8px;
   position: relative;
+}
+#content #detail #detail_info .info_book div a {
+  color: #333;
+}
+#content #detail #detail_info .info_book div:last-child {
+  background-color: #fff;
+}
+#content #detail #detail_info #book_slipt {
+  border-top: 1px solid #efefef;
+  padding: 30px 0;
+  position: relative;
+}
+#content #detail #detail_info #book_slipt strong {
+  float: left;
+  width: 120px;
+  font-size: 15px;
+  line-height: 27px;
+  color: #212121;
+  display: block;
+}
+#content #detail #detail_info #book_slipt .right_box {
+  float: right;
+  width: 456px;
+  position: relative;
+}
+#content #detail #detail_info #book_slipt .right_box em {
+  display: block;
+  line-height: 22px;
+  padding: 0 10px;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  z-index: 10;
+  color: #eb6a62;
+  font-size: 10px;
+  font-weight: bold;
+  background: #f9efee;
+  box-shadow: 0px 1px 2px rgba(199, 180, 180, 0.33);
+  border-radius: 20px;
+  font-style: normal;
+}
+#content #detail #detail_info #book_slipt .right_box em:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  bottom: -10px;
+  right: 30px;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #f9efee;
+  border-width: 10px;
+  margin-left: -10px;
+  z-index: -1;
+}
+#content #detail #detail_info #book_slipt .right_box a {
+  border: 1px solid #dbdbdb;
+  width: 439px;
+  height: 38px;
+  line-height: 38px;
+  color: #eb6a62;
+  font-size: 13px;
+  background: url(../sub_img/btn_right_red.png) no-repeat 415px 13px;
+  padding-left: 15px;
+  display: block;
+}
+#content #detail #detail_info .buy_benefit {
+  border-top: 1px solid #efefef;
+  padding: 30px 0;
+  position: relative;
+}
+#content #detail #detail_info .buy_benefit .right_box > span {
+  background: url(../sub_img/icon_5.png) no-repeat 10px 6px;
+  min-width: 40px;
+  line-height: 25px;
+  padding: 0 10px 0 30px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  font-size: 11px;
+  display: inline-block;
+  position: relative;
+}
+#content #detail #detail_info .buy_number {
+  border-top: 1px solid #efefef;
+  padding: 30px 0;
+  position: relative;
+}
+#content #detail #detail_info .buy_number .buy_count {
+  padding: 0 26px;
+  position: relative;
+  width: 118px;
+}
+#content #detail #detail_info .buy_number .buy_count a {
+  position: absolute;
+  display: block;
+  height: 28px;
+  width: 28px;
+  overflow: hidden;
+  float: left;
+  z-index: 1;
+}
+#content #detail #detail_info .buy_number .buy_count input {
+  width: 68px;
+  height: 28px;
+  line-height: 28px;
+  color: #9e9e9e;
+  border: 1px solid #dbdbdb;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  outline: none;
+}
+#content #detail #detail_info .buy_number .buy_count .btn_minus {
+  background: url(../sub_img/btn_minus.png) no-repeat;
+  left: 0;
+}
+#content #detail #detail_info .buy_number .buy_count .btn_plus {
+  background: url(../sub_img/btn_plus.png) no-repeat;
+  right: 0;
+}
+#content #detail #detail_info .buy_number .buy_price {
+  width: 288px;
+  float: right;
+  text-align: right;
+  margin: 15px 0 25px;
+}
+#content #detail #detail_info .buy_number .buy_price .discount_price {
+  display: block;
+  margin-bottom: 4px;
+}
+#content #detail #detail_info .buy_number .buy_price .discount_price strong {
+  font-size: 15px;
+  line-height: 23px;
+  text-decoration: line-through;
+  color: #9e9e9e;
+  margin-left: 13px;
+}
+#content #detail #detail_info .buy_number .buy_price .total {
+  font-size: 30px;
+  line-height: 41px;
+  color: #212121;
+  display: block;
+  margin-bottom: 4px;
+}
+#content #detail #detail_info .buy_number .buy_price .total span {
+  font-size: 14px;
+  line-height: 23px;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+#content #detail #detail_info .buy_number .buy_price .saving {
+  font-weight: bold;
+  color: #eb6a62;
+  font-size: 11px;
+  line-height: 22px;
+  display: block;
+  font-style: normal;
+}
+#content #detail #detail_info .buy_number .buy_price .saving .badges_red {
+  display: inline-block;
+  background: #eb6a62;
+  border-radius: 20px;
+  line-height: 18px;
+  color: #fff;
+  padding: 0 8px;
+  margin-right: 8px;
+}
+#content #detail #detail_info .buy_number .buy_price .saving .discount {
+  font-weight: normal;
+  color: #212121;
+  margin-left: 8px;
+}
+#content #detail #detail_info .buy_number .buy_btn_wrap {
+  clear: both;
+  position: relative;
+}
+#content #detail #detail_info .buy_number .buy_btn_wrap a {
+  width: 50%;
+  display: block;
+  border-radius: 0;
+  line-height: 48px;
+  font-size: 16px;
+  box-shadow: none;
+  border: 1px solid #cdcdcd;
+  color: #464b6f;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+#content #detail #detail_info .buy_number .buy_btn_wrap a:first-child {
+  float: left;
+}
+#content #detail #detail_info .buy_number .buy_btn_wrap a:last-child {
+  float: right;
+  box-shadow: 0px 4px 10px rgba(160, 162, 171, 0.53);
+  background-color: #464b6f;
+  color: #fff;
+}
+#content #detail #detail_info .detail_info_notice {
+  background: #fbfbfb;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  height: 92px;
+  width: 100%;
+  padding: 10px 25px;
+  overflow-y: auto;
+}
+#content #detail #detail_info .detail_info_notice table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#content #detail #detail_info .detail_info_notice table caption {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#content #detail #detail_info .detail_info_notice table th, #content #detail #detail_info .detail_info_notice table td {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 23px;
+  color: #9e9e9e;
+  vertical-align: top;
+  text-align: left;
+}
+#content #detail:after {
+  content: "";
+  clear: both;
+  display: block;
 }

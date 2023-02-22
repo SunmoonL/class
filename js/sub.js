@@ -28,12 +28,11 @@ $(function(){
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "고양이1" },
+    data: { query: "고양이1"},
     headers: { Authorization: "KakaoAK 4e5b4da2542e9d9b07f53f75040d87b3" }
 })
     .done(function (msg) {
         $(".author > a").prepend(msg.documents[2].authors);
         $(".translators > a").prepend(msg.documents[2].translators);
         $(".publisher > a").prepend(msg.documents[2].publisher);
-        $(".datetime").append(msg.documents[2].datetime);
     });
