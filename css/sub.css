@@ -527,3 +527,119 @@ a {
   clear: both;
   display: block;
 }
+#content #Together {
+  margin-bottom: 45px;
+}
+#content #Together .tab .inner {
+  margin-left: 0;
+  margin-right: 0;
+  width: 1200px;
+}
+#content #Together .tab .inner a {
+  float: left;
+  width: 213px;
+  border: 1px solid #efefef;
+  border-bottom: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #212121;
+  line-height: 60px;
+}
+#content #Together .tab .inner .on {
+  background-color: #fcfcfb;
+}
+#content #Together .tab .inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content #Together .tab_slide {
+  background-color: #fcfcfb;
+}
+#content #Together .tab_slide .inner {
+  margin-left: 0;
+  margin-right: 0;
+  width: 1200px;
+}
+#content #Together .tab_slide .inner .left_con {
+  width: 233px;
+  float: left;
+  position: relative;
+  padding: 29px 0 24px 30px;
+  height: 272px;
+}
+#content #Together .tab_slide .inner .left_con .title {
+  font-size: 18px;
+  color: #212121;
+  line-height: 25px;
+  display: block;
+  margin-bottom: 15px;
+}
+#content #Together .tab_slide .inner .left_con .btn_box {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 210px;
+}
+#content #Together .tab_slide .inner .left_con .btn_box label {
+  display: block;
+  line-height: 28px;
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#content #Together .tab_slide .inner .left_con .btn_box label input {
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+}
+#content #Together .tab_slide .inner .left_con .btn_box a:nth-child(2) {
+  float: left;
+  background: url(../sub_img/keep_s.png) no-repeat 21px 13px;
+  padding-left: 46px;
+  background-color: #fff;
+}
+#content #Together .tab_slide .inner .left_con .btn_box a:nth-child(3) {
+  float: right;
+  background: url(../sub_img/cart_s.png) no-repeat 17px 12px;
+  padding-left: 46px;
+  background-color: #fff;
+}
+#content #Together .tab_slide .inner .left_con .btn_box a {
+  display: block;
+  line-height: 42px;
+  font-size: 12px;
+  color: #000;
+  width: 105px;
+  border: 1px solid #cdcdcd;
+}
+#content #Together .tab_slide .inner .product_book_list {
+  position: relative;
+  height: 272px;
+  float: right;
+  width: 76.5%;
+  padding: 29px 0 24px;
+  clear: none;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper {
+  max-width: 865px;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 272px;
+}
+#content #Together .tab_slide .inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content #Together:after {
+  content: "";
+  display: block;
+  clear: both;
+}
