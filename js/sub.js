@@ -41,7 +41,7 @@ $.ajax({
 
         var search;
     
-        search = ["고양이", "반려견"];
+        search = ["고양이", "반려동물"];
     
         for (i = 0; i < search.length; i++) {
             $.ajax({
