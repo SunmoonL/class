@@ -1,4 +1,4 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +133,7 @@ a {
   width: 894px;
   position: relative;
   display: none;
+  z-index: 200;
 }
 #intro .intro-wrap #site #site_map ul {
   display: flex;
@@ -633,6 +634,120 @@ a {
   position: relative;
   height: 272px;
 }
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul {
+  width: 1204px;
+  position: relative;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li {
+  float: left;
+  position: relative;
+  width: 172px;
+  padding: 0 0 0 52px;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li input {
+  top: 0;
+  position: absolute;
+  left: 19px;
+  z-index: 1;
+  border: 1px solid #000;
+  height: 11px;
+  width: 11px;
+  border-radius: 2px;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .img_thumbnail {
+  float: left;
+  position: relative;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .img_thumbnail .img {
+  width: 119px;
+  height: 165px;
+  line-height: 165px;
+  border: 1px solid #efefef;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .img_thumbnail .img img {
+  width: 119px;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .book_info {
+  width: 185px;
+  float: left;
+  margin: 0;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .book_info .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 121px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  max-height: 37px;
+  margin: 12px 0 2px;
+  color: #000;
+  clear: both;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .sec_btn {
+  width: 121px;
+  text-align: center;
+  position: inherit;
+  bottom: inherit;
+  right: inherit;
+  clear: both;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .sec_btn strong {
+  font-size: 15px;
+  line-height: 28px;
+  margin: 0;
+  display: block;
+  color: #2d2d2d;
+  clear: both;
+  text-align: center;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .sec_btn span {
+  display: inline-block;
+  margin: 10px 0 40px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .sec_btn .txt_discount {
+  color: #e2232e;
+  padding-right: 13px;
+  margin-right: 5px;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_viewport ul li .sec_btn .txt_point {
+  color: #464b6f;
+  padding-right: 12px;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_controls .bx-prev {
+  margin-left: -437px;
+  top: 87px;
+  background: url(../sub_img/prev_1.png) no-repeat;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  z-index: 10;
+}
+#content #Together .tab_slide .inner .product_book_list .bx_wrapper .bx_controls .bx-next {
+  margin-left: 368px;
+  top: 87px;
+  background: url(../sub_img/next_1.png) no-repeat;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  z-index: 10;
+}
 #content #Together .tab_slide .inner:after {
   content: "";
   display: block;
@@ -642,4 +757,54 @@ a {
   content: "";
   display: block;
   clear: both;
+}
+
+#Together > div.tab_slide > div:nth-child(2) {
+  display: none;
+}
+
+#banner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+#banner > a {
+  border: 1px solid #efefef;
+}
+#banner > a img {
+  vertical-align: middle;
+}
+#banner a:first-child {
+  float: left;
+}
+#banner a:last-child {
+  float: right;
+}
+
+.inner {
+  margin-left: 0;
+  margin-right: 0;
+  width: 1200px;
+}
+
+#product_detail_menu {
+  background: #eeeeee;
+  height: 48px;
+  border-top: 2px solid #eeeeee;
+  margin-top: 100px;
+}
+#product_detail_menu a {
+  text-align: center;
+  color: #333333;
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+  width: 248px;
+  float: left;
+}
+#product_detail_menu .on {
+  font-weight: bold;
+  background: #fff;
 }
