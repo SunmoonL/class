@@ -115,3 +115,11 @@ $.ajax({
             });
         
         });
+        
+        // 푸터
+        $(function(){
+            $(".about-button").click(function(){
+                $(this).toggleClass("show");
+                $(this).siblings(".question").toggle();
+            });
+        });
