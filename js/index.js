@@ -586,5 +586,5 @@ $(document).ready(function(){
     });
 
     function moveTo(){
-        location.assign("https://www.millie.co.kr/v3/intro")
+        location.assign("sub.html")
     };
