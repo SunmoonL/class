@@ -516,6 +516,8 @@ $(function(){
 });
 });
 
+// 스와이퍼
+
 $(document).ready(function(){
 var swiper = new Swiper(".swiper-container", {
     pagination: {
@@ -528,7 +530,6 @@ var swiper = new Swiper(".swiper-container", {
     on: {
         slideChange: function () {
             var has = $(".swiper-pagination-bullet-active").index();
-          //   console.log(has);
 
             $(".slide-data > p").eq(has).show();
             $(".slide-data > p").eq(has).siblings("p").hide();
@@ -549,7 +550,6 @@ $(document).ready(function(){
         on: {
             slideChange: function () {
                 var has1 = $(".swiper-pagination1 > .swiper-pagination-bullet-active").index();
-              //   console.log(has);
     
                 $(".slide-data1 > p").eq(has1).show();
                 $(".slide-data1 > p").eq(has1).siblings("p").hide();
